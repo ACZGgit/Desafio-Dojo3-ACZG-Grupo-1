@@ -9,7 +9,15 @@ class app {
             if(entrada[i]!=',')
             {
 
+            } else if {
+                entrada
             }
+            break
+
+            if {
+            inicial_abas
+        }
+        }
         }
 
     }
