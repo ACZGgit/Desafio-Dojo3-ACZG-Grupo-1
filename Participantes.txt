@@ -2,4 +2,4 @@ nomes:
 1: Gabriel Aguiar de Castro Moura Rezende
 2: Gustavo Fernandes dos Santos
 3: João
-4: Thiago
+4: Thiago da Silva Nascimento
