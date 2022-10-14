@@ -15,7 +15,7 @@ class Parser {
 			{
 				if(entrada[i]!=',')
 				{
-					if(entrada[i+1]!=',')
+					//if(entrada[i+1]!=',')
 					{
 
 					}
