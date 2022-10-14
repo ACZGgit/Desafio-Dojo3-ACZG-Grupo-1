@@ -1,7 +1,16 @@
 class app {
     public static void main(String[] args){
 
-        println "Start coding here!!!"
+        String entrada = "3,5,F,F,C,C"
+        int inicial_abas, acoes_pericles;
+
+        for(int i=0;i< entrada.length();i++)
+        {
+            if(entrada[i]!=',')
+            {
+
+            }
+        }
 
     }
 }
