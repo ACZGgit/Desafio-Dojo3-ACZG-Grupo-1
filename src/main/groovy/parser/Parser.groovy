@@ -8,16 +8,19 @@ class Parser {
 		List acoes = entrada.tokenize(',')
 
 		String numeroInicialDeAbasString = acoes.remove(0)
-		String numeroDeAcoesString = acoes.remove(1)
+		String numeroDeAcoesString = acoes.remove(0)
 
 		Integer numeroInicialDeAbas = new Integer(numeroInicialDeAbasString)
 		Integer numeroDeAcoes = new Integer(numeroDeAcoesString)
 
+		Integer numerodeAbas = numeroInicialDeAbas
+
 		for (String acao : acoes) {
+			//Manipulação do valor do numero de abas conforme o caso
 			if (acao == 'F') {
-
+				numerodeAbas = numerodeAbas + 2
 			} else if (acao == 'C') {
-
+				numerodeAbas = numerodeAbas - 1
 			}
 		}
 
