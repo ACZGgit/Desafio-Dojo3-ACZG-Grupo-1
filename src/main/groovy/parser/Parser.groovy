@@ -8,7 +8,7 @@ class Parser {
 		List acoes = entrada.tokenize(',')
 
 		String numeroInicialDeAbasString = acoes.remove(0)
-		String numeroDeAcoesString = acoes.remove(0)
+		String numeroDeAcoesString = acoes.remove(1)
 
 		Integer numeroInicialDeAbas = new Integer(numeroInicialDeAbasString)
 		Integer numeroDeAcoes = new Integer(numeroDeAcoesString)
