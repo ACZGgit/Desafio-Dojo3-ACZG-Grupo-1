@@ -3,24 +3,23 @@ package parser
 class Parser {
 
 	String executar(String entrada) {
-		String saida = '1'
+		String saida
 
-		//Seu codigo aqui
-		//String entrada = "3,5,F,F,C,C,C"
+		List acoes = entrada.tokenize(',')
 
-			int inicial_abas, acoes_pericles;
-			def acoes = []
+		String numeroInicialDeAbasString = acoes.remove(0)
+		String numeroDeAcoesString = acoes.remove(0)
 
-			for(int i=0;i< entrada.length();i++)
-			{
-				if(entrada[i]!=',')
-				{
-					//if(entrada[i+1]!=',')
-					{
+		Integer numeroInicialDeAbas = new Integer(numeroInicialDeAbasString)
+		Integer numeroDeAcoes = new Integer(numeroDeAcoesString)
 
-					}
-				}
+		for (String acao : acoes) {
+			if (acao == 'F') {
+
+			} else if (acao == 'C') {
+
 			}
+		}
 
 		return saida
 
