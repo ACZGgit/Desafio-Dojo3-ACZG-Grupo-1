@@ -24,7 +24,7 @@ class Parser {
 			}
 		}
 
-		return saida
+		return numerodeAbas
 
 	}
 }
