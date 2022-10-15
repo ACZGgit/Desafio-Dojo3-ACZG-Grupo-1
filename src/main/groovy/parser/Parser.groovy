@@ -21,6 +21,10 @@ class Parser {
 				numerodeAbas = numerodeAbas + 1
 			} else if (acao == 'C') {
 				numerodeAbas = numerodeAbas - 1
+
+				if(numerodeAbas == 0) {
+					return numerodeAbas
+				}
 			}
 		}
 
