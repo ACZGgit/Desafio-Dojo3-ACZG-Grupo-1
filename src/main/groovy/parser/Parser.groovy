@@ -18,7 +18,7 @@ class Parser {
 		for (String acao : acoes) {
 			//Manipulação do valor do numero de abas conforme o caso
 			if (acao == 'F') {
-				numerodeAbas = numerodeAbas + 2
+				numerodeAbas = numerodeAbas + 1
 			} else if (acao == 'C') {
 				numerodeAbas = numerodeAbas - 1
 			}
