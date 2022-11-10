@@ -15,7 +15,7 @@ class dietaServiceTest extends GroovyTestCase{
 	}
 
 	@Test
-	void testExecutar1() {
+	void testEntradaComum() {
 
 		String saida = dieta_Service.executar('ABCD,AB,C')
 		assertEquals('D', saida)
@@ -23,14 +23,14 @@ class dietaServiceTest extends GroovyTestCase{
 	}
 
 	@Test
-	void testExecutar2() {
+	void testEntradaComEspaco() {
 
 		String saida = dieta_Service.executar("ABEDCS, , ")
 		assertEquals("ABEDCS", saida)
 	}
 
 	@Test
-	void testExecutar3() {
+	void testIngeriuAlimentoForaDaDieta() {
 
 		String saida = dieta_Service.executar("EDSMB,MSD,A")
 		assertEquals("CHEATER", saida)
