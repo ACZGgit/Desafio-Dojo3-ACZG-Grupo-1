@@ -26,6 +26,10 @@ class dietaService {
 	}
 
 	String obterAlimentosDaJanta() {
-		null
+		for(String letras in refeicoes){
+			if(dieta.contains(letras)){
+
+			}
+		}
 	}
 }
