@@ -35,4 +35,5 @@ class dietaServiceTest extends GroovyTestCase{
 		assertEquals("CHEATER", saida)
 	}
 
+
 }
