@@ -1,15 +1,23 @@
 package Services
 
 class dietaService {
+	String dieta
+	String refeicoes
+
+	void separar(String entrada){
+		List<String> elementos = entrada.tokenize(",")
+
+		this.dieta = elementos[0]
+
+		String cafeDaManha = elementos[1]
+		String almoco = elementos[2]
+
+		this.refeicoes = cafeDaManha + almoco
+	}
 
 	String executar(String entrada) {
 
-		String alimentosDaJanta = 'ABCD,AB,C'
-		List<String> elementos = alimentosDaJanta.tokenize(",")
-
-		String dieta = elementos[0]
-		String cafe_da_manha = elementos[1]
-		String almoco = elementos[2]
+		separar(entrada)
 
 
 		return alimentosDaJanta
