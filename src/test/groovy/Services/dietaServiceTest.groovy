@@ -16,7 +16,6 @@ class dietaServiceTest extends GroovyTestCase{
 
 	@Test
 	void testEntradaComum() {
-
 		String saida = dieta_Service.executar('ABCD,AB,C')
 		assertEquals('D', saida)
 
