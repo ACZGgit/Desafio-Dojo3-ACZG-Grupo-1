@@ -22,6 +22,13 @@ class dietaServiceTest extends GroovyTestCase{
 	}
 
 	@Test
+	void testEntradaComumInvertida() {
+		String saida = dieta_Service.executar('ABCD,BA,C')
+		assertEquals('D', saida)
+
+	}
+
+	@Test
 	void testEntradaComEspaco() {
 
 		String saida = dieta_Service.executar("ABEDCS, , ")

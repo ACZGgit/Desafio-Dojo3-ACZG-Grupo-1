@@ -3,31 +3,33 @@ package Services
 class dietaService {
 	String dieta
 	String refeicoes
+	String janta
 
 	String executar(String entrada) {
 		prepararEntrada(entrada)
+		obterJanta()
 
-		String alimentosDaJanta = obterJanta()
-
-		return alimentosDaJanta
+		return janta
 
 	}
 
 	void prepararEntrada(String entrada){
 		List<String> elementos = entrada.tokenize(',')
 
-		this.dieta = elementos[0]
+		dieta = elementos[0]
 
 		String cafeDaManha = elementos[1]
 		String almoco = elementos[2]
 
-		this.refeicoes = cafeDaManha + almoco
-		this.refeicoes = this.refeicoes.trim()
+		refeicoes = cafeDaManha + almoco
+		refeicoes = refeicoes.trim()
 	}
 
-	String obterJanta(String dieta, String refeicoes) {
-
-
-		return dieta.replaceAll(refeicoes,"")
+	void obterJanta() {
+		janta = dieta
+		for(String letra in refeicoes)
+		{
+			janta = janta.replaceAll(letra,"")
+		}
 	}
 }
