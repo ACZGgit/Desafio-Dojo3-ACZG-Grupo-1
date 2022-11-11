@@ -9,10 +9,10 @@ Para acessar o enunciado [clique aqui](https://docs.google.com/document/d/1t7zqD
 
 
 Os componentes do grupo são os seguintes, já na ordem de rotacionamento:
-- x
-- x
-- x
-- x 
+- Hyago
+- Jocelin
+- Gustavo
+- João
 
 
 Recapitulando, o Dojo funciona baseado em rotatividade, onde a cada rodada 2 participantes interagem, sendo que 1 estará

@@ -1,5 +1,5 @@
-nomes:
-1: x
-2: x
-3: x
-4: x
+Instrução, adicione um "OK" na frente do seu nome e faça um push:
+1: Hyago
+2: Jocelin
+3: Gustavo
+4: João
