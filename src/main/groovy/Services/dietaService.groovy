@@ -4,8 +4,17 @@ class dietaService {
 	String dieta
 	String refeicoes
 
-	void separar(String entrada){
-		List<String> elementos = entrada.tokenize(",")
+	String executar(String entrada) {
+		prepararEntrada(entrada)
+
+		String alimentosDaJanta = obterAlimentosDaJanta()
+
+		return alimentosDaJanta
+
+	}
+
+	void prepararEntrada(String entrada){
+		List<String> elementos = entrada.tokenize(',')
 
 		this.dieta = elementos[0]
 
@@ -13,14 +22,10 @@ class dietaService {
 		String almoco = elementos[2]
 
 		this.refeicoes = cafeDaManha + almoco
+		this.refeicoes = this.refeicoes.trim()
 	}
 
-	String executar(String entrada) {
-
-		separar(entrada)
-
-
-		return alimentosDaJanta
-
+	String obterAlimentosDaJanta() {
+		null
 	}
 }
