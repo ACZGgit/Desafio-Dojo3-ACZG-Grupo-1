@@ -7,7 +7,7 @@ class dietaService {
 	String executar(String entrada) {
 		prepararEntrada(entrada)
 
-		String alimentosDaJanta = obterAlimentosDaJanta()
+		String alimentosDaJanta = obterJanta()
 
 		return alimentosDaJanta
 
@@ -25,11 +25,9 @@ class dietaService {
 		this.refeicoes = this.refeicoes.trim()
 	}
 
-	String obterAlimentosDaJanta() {
-		for(String letras in refeicoes){
-			if(dieta.contains(letras)){
+	String obterJanta(String dieta, String refeicoes) {
 
-			}
-		}
+
+		return dieta.replaceAll(refeicoes,"")
 	}
 }
