@@ -8,9 +8,11 @@ class dietaService {
 
 	String executar(String entrada) {
 		prepararEntrada(entrada)
-		verificarAlimentoForaDieta()
 
-		if(cheater) return "CHEATER!"
+		verificarAlimentoForaDieta()
+		//verificarRepeticao()
+		if(cheater) return "CHEATER"
+
 
 		obterJanta()
 
@@ -32,15 +34,25 @@ class dietaService {
 
 	void verificarAlimentoForaDieta() {
 		for (String letra in refeicoes) {
-			if (!dieta.contains(letra)) cheater = true
+			if (!dieta.contains(letra))
+			{
+				cheater = true
+			}
 		}
 	}
 
+	void verificarRepeticao() {
+		String dieta1 = dieta
 
-	void verificaRepeticao() {
-		for() {
+		for(String letra in dieta1){
+			dieta1 -= letra
 
+			if(dieta1.contains(letra))
+			{
+				cheater = true
+			}
 		}
+
 	}
 
 	void obterJanta() {
@@ -49,4 +61,6 @@ class dietaService {
 			janta -= letra
 		}
 	}
+
+	
 }
