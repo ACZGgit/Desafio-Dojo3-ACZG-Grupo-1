@@ -13,7 +13,7 @@ class dietaService {
 
 	}
 
-	void prepararEntrada(String entrada){
+	void prepararEntrada(String entrada) {
 		List<String> elementos = entrada.tokenize(',')
 
 		dieta = elementos[0]
@@ -27,9 +27,8 @@ class dietaService {
 
 	void obterJanta() {
 		janta = dieta
-		for(String letra in refeicoes)
-		{
-			janta = janta.replaceAll(letra,"")
+		for (String letra in refeicoes) {
+			janta -= letra
 		}
 	}
 }
