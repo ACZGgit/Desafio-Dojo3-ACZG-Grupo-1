@@ -25,6 +25,13 @@ class dietaService {
 		refeicoes = refeicoes.trim()
 	}
 
+
+	void verificaRepeticao(){
+		for(int i =0; refeicoes.length(); i++){
+
+		}
+	}
+
 	void obterJanta() {
 		janta = dieta
 		for (String letra in refeicoes) {
