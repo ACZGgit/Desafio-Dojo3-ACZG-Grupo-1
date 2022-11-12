@@ -29,10 +29,24 @@ class dietaServiceTest extends GroovyTestCase{
 	}
 
 	@Test
+	void testEntradaRepetido() {
+		String saida = dieta_Service.executar('ABCD,BA,CB')
+		assertEquals('CHEATER', saida)
+
+	}
+
+	@Test
+	void testSaidaOrdenada() {
+		String saida = dieta_Service.executar('ZDCBAY,BC,A')
+		assertEquals('DYZ', saida)
+
+	}
+
+	@Test
 	void testEntradaComEspaco() {
 
 		String saida = dieta_Service.executar("ABEDCS, , ")
-		assertEquals("ABEDCS", saida)
+		assertEquals("ABCDES", saida)
 	}
 
 	@Test
