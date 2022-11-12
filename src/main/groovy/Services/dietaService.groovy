@@ -4,9 +4,14 @@ class dietaService {
 	String dieta
 	String refeicoes
 	String janta
+	boolean cheater = false
 
 	String executar(String entrada) {
 		prepararEntrada(entrada)
+		verificarAlimentoForaDieta()
+
+		if(cheater) return "CHEATER!"
+
 		obterJanta()
 
 		return janta
@@ -25,9 +30,15 @@ class dietaService {
 		refeicoes = refeicoes.trim()
 	}
 
+	void verificarAlimentoForaDieta() {
+		for (String letra in refeicoes) {
+			if (!dieta.contains(letra)) cheater = true
+		}
+	}
 
-	void verificaRepeticao(){
-		for(int i =0; refeicoes.length(); i++){
+
+	void verificaRepeticao() {
+		for() {
 
 		}
 	}
